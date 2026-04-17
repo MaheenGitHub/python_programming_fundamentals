@@ -1,0 +1,7 @@
+no special character like @ , # , !
+no space allowed
+case sensitive
+
+camelCase (myName)
+PascalCase (MyName)
+snake_case (my_name)
