@@ -15,3 +15,21 @@ print(roll_no)
 
 roll_no[1:4] = [45,46,47]
 print(roll_no)
+
+"""
+import random
+
+print("choice(list) -> random number from list")
+l = [3,4,22,4,2]
+print(random.choice(l))
+
+print("shuffle(list) ->Shuffle the list randomnly")
+print(random.shuffle(l)) # None 
+
+shuffled = random.shuffle(l)
+print(shuffled) #None
+
+random.shuffle(l)
+print(l)
+
+"""
