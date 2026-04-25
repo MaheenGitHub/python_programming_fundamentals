@@ -28,10 +28,11 @@ s consists of English letters, digits, symbols and spaces.
 
 """
  
-s = "abcabcbb"
+s = "abc"
 count = 0
 max_count = [0]
 
+print("My approach")
 result = []
 for i in range(0, len(s)) :
     result.append(s[i])
@@ -49,6 +50,22 @@ for i in range(0, len(s)) :
 
 print(max(max_count))
     
+print("Sliding window technique")
+left = 0
+max_length = 0
+char_set = set()
+
+for right in range(len(s)) :
+    while s[right] in char_set :
+        char_set.remove(s[left])
+        left += 1
+
+    char_set.add(s[right])
+    max_length= max(max_length , right - left + 1)
+print(max_length)
+
+
+
 """
 code i submitted on leetcode
 
